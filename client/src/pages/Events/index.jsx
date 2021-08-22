@@ -2,12 +2,12 @@ import React from 'react';
 
 import Header from '../../components/Header';
 
-const Home = () => {
+const Events = () => {
     return (
         <div>
-            <Header/>
+            <Header active={2}/>
         </div>
     )
 }
 
-export default Home;
+export default Events;

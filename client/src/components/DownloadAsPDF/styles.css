@@ -1,0 +1,17 @@
+@import url('../../globalStyles.css');
+.element{
+    border-radius: 50px;
+}
+.div{
+    border: none;
+    height: 45px;
+    margin: 5px;
+    margin-right: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.faded-gradient{
+    background: linear-gradient(225deg, rgba(151, 108, 243, 0.5), rgba(49, 79, 219, 0.5));
+}
