@@ -25,8 +25,8 @@ const Header = ({ active }) => {
                 <Navbar.Brand className="elements">
                     <div className="children">
                         {isTabletorMobile && (
-                            <Button className="gradient-text no-border elements" onClick={toggleShow}>
-                                Open
+                            <Button className="gradient-text no-border elements link" onClick={toggleShow}>
+                                <i class="fas fa-bars fa-2x"/>
                             </Button>
                         )}
                         <Logo/>

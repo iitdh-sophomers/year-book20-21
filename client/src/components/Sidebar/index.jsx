@@ -14,11 +14,11 @@ const Sidebar = ({ show, handleClose, active }) => {
     const history = useHistory();
 
     return (
-        <div className="background-black" style={{ left:show?'0':'-80%', position: 'absolute', height: '100vh', width: '80%', margin: '0', padding: '0', transition: 'left 1s', zIndex: 100, top: '0px' }}>
+        <div className="background-black" style={{ left:show?'0':'-256px', position: 'absolute', height: '100vh', width: '256px', margin: '0', padding: '0', transition: 'left 1s', zIndex: 100, top: '0px' }}>
             <div className="children">
                 {isTabletorMobile && (
-                    <Button className="gradient-text no-border elements" onClick={handleClose}>
-                        Open
+                    <Button className="gradient-text no-border elements link" onClick={handleClose}>
+                        <i class="fas fa-bars fa-2x"/>
                     </Button>
                 )}
                 <Logo/>
