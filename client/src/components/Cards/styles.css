@@ -1,0 +1,39 @@
+.rectangle
+{
+position: absolute;
+width: 400px;
+height: 247px;
+left: 953px;
+top: 159px;
+background: #0E141B;
+border-radius: 10px;
+}
+
+.cards
+{
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    background-color: black;
+    width: 400px;
+    height: 247px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.img
+{
+    border-radius: 100%;
+    border : 1px solid black;
+    height: 160px;
+    width: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.grid
+{
+    display: flex;
+    justify-content: space-between;
+}
