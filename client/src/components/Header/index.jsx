@@ -20,12 +20,12 @@ const Header = ({ active }) => {
     }
 
     return (
-        <Navbar fixed="top" expand="lg" className="header">
-            <Container className="container">
+        <Navbar fixed="top" className="header">
+            <Container className="fullWidth">
                 <Navbar.Brand className="elements">
                     <div className="children">
                         {isTabletorMobile && (
-                            <Button className="gradient-text no-border elements link" onClick={toggleShow}>
+                            <Button className="gradient-text no-border link" onClick={toggleShow}>
                                 <i class="fas fa-bars fa-2x"/>
                             </Button>
                         )}
@@ -33,14 +33,14 @@ const Header = ({ active }) => {
                     </div>
                 </Navbar.Brand>
                 {!isTabletorMobile && (
-                    <div className="children">
-                        <Nav>
+                    <>
+                        <Nav className="justify-content-end">
                             <NavLink href="/" className={`elements text a ${(active===1)?'violet':'white'}`}>Home</NavLink>
                             <NavLink href="/events" className={`elements text a ${(active===2)?'yellow':'white'}`}>Events</NavLink>
                             <NavLink href="/students" className={`elements text a ${(active===3)?'green':'white'}`}>Students</NavLink>
+                            <DownloadButton/>
                         </Nav>
-                        <DownloadButton/>
-                    </div>
+                    </>
                 )}
             </Container>
             <Sidebar show={show} handleClose={toggleShow} active={active}/>

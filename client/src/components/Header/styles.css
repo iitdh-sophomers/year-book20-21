@@ -35,3 +35,7 @@
 .no-border{
     border: none;
 }
+
+.fullWidth{
+    max-width: 100vw;
+}

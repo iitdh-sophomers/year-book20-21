@@ -12,7 +12,7 @@ const DownloadAsPDF = () => {
     };
     return (
         <Button className={`div ${hover?'faded-gradient':'gradient'} element`} onMouseEnter={toggleHover} onMouseLeave={toggleHover}>
-            <h3 className="text white text-element">Download as PDF</h3>
+            <h5 className="text white text-element center">Download as PDF</h5>
         </Button>
     )
 }
