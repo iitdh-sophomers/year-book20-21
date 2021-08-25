@@ -18,3 +18,8 @@
 .center{
     margin-bottom: 0rem;
 }
+
+.btn-primary:hover:is(.faded-gradient) {
+    background-color: #000000 !important;
+    border: none;
+}

@@ -1,7 +1,9 @@
 import React from "react";
-import "./styles.css";
+
 import picture from "../../components/Cards/avatar.png";
 import Header from "../../components/Header";
+import { url } from '../../shared/pdfURL';
+import "./styles.css";
 
 const Home = () => {
 	return (
@@ -15,11 +17,11 @@ const Home = () => {
 						made by 2020-21 Batch of IIT Dharwad <br />
 						<span className="dark-text homepage__description-overview">
 							This is also availabe in PDF and can be accessed through the{" "}
-							<span className="gradient-text" style={{ fontWeight: "bold" }}>
+							<span className="gradient-text">
 								Download as PDF
 							</span>{" "}
-							above or by clecking{" "}
-							<a href="#" className="a gradient-text">
+							above or by clicking{" "}
+							<a href={url} className="a gradient-text">
 								here
 							</a>
 						</span>
