@@ -1,0 +1,9 @@
+.content {
+	padding-top: calc(1.375rem + 1.5vw + 45px);
+}
+
+@media only screen and (min-width: 992px) {
+	.flexbox:nth-child(even) {
+		flex-direction: row-reverse;
+	}
+}
