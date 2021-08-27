@@ -8,9 +8,9 @@ const Events = () => {
         <div>
             <Header active={2}/>
             <div className="content">
-                <EventComp />
-                <EventComp />
-                <EventComp />
+                <EventComp parity={0}/>
+                <EventComp parity={1}/>
+                <EventComp parity={0}/>
             </div>
         </div>
     )

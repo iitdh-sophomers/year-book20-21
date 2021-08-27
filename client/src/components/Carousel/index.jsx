@@ -5,7 +5,7 @@ import './styles.css';
 
 const CarouselComp = () => {
 	return (
-		<Carousel>
+		<Carousel className="carousel">
 			<Carousel.Item>
 				<img
 				className="d-block w-100 fade-out"

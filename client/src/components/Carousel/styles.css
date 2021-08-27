@@ -7,3 +7,8 @@
 img {
 	height: auto!important;
 }
+
+.carousel {
+	border-radius: 10px;
+	overflow: hidden;
+}
