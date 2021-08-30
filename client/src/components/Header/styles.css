@@ -1,7 +1,7 @@
 @import url('../../globalStyles.css');
 
 .header{
-    background-color: transparent;
+    background-color: rgba(32, 33, 36, 0.9);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
