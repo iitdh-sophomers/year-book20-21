@@ -35,9 +35,9 @@ const Header = ({ active }) => {
                 {!isTabletorMobile && (
                     <>
                         <Nav className="justify-content-end">
-                            <NavLink href="/" className={`elements text a ${(active===1)?'violet':'white'}`}>Home</NavLink>
-                            <NavLink href="/events" className={`elements text a ${(active===2)?'yellow':'white'}`}>Events</NavLink>
-                            <NavLink href="/students" className={`elements text a ${(active===3)?'green':'white'}`}>Students</NavLink>
+                            <NavLink id="1" href="/" className={`elements text a ${(active===1)?'circle-border selected-gradient bcolor':'circle-border-invisible white'}`} >Home</NavLink>
+                            <NavLink id="2" href="/events" className={`elements text a ${(active===2)?'circle-border selected-gradient bcolor':'circle-border-invisible white'}`} >Events</NavLink>
+                            <NavLink id="3" href="/students" className={`elements text a ${(active===3)?'circle-border selected-gradient bcolor':'circle-border-invisible white'}`} >Students</NavLink>
                             <DownloadButton/>
                         </Nav>
                     </>

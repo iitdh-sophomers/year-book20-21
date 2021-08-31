@@ -1,13 +1,13 @@
 @import url('../../globalStyles.css');
-
-.header{
+.header {
     background-color: rgba(32, 33, 36, 0.9);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
-.container{
+
+.container {
     display: flex;
     flex-grow: 1;
     flex-direction: row;
@@ -15,27 +15,63 @@
     align-items: center;
     height: 5vh;
 }
-.children{
+
+.circle-border-invisible {
+    border-style: solid;
+    border-radius: 50px;
+    border-width: 0px;
+    border-color: rgba(151, 108, 243, 1);
+    height: 45px;
+    margin: 5px;
+    margin-right: 46%;
+    margin-left: 46%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.circle-border {
+    border-style: solid;
+    border-radius: 50px;
+    border-color: rgba(151, 108, 243, 1);
+    height: 45px;
+    margin: 5px;
+    margin-right: 46%;
+    margin-left: 46%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.selected-gradient {
+    background: linear-gradient(225deg, rgba(151, 108, 243, 1), rgba(49, 79, 219, 1)) !important;
+}
+
+.children {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
-.sidebar{
+
+.sidebar {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
-.elements{
+
+.elements {
     margin: 5px;
     padding: 10px;
 }
 
-.no-border{
+.no-border {
     border: none;
 }
 
-.fullWidth{
+.fullWidth {
     max-width: 100vw;
 }
