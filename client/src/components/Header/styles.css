@@ -23,8 +23,8 @@
     border-color: rgba(151, 108, 243, 1);
     height: 45px;
     margin: 5px;
-    margin-right: 46%;
-    margin-left: 46%;
+    margin-right: 48%;
+    margin-left: 48%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,16 +37,70 @@
     border-color: rgba(151, 108, 243, 1);
     height: 45px;
     margin: 5px;
-    margin-right: 46%;
-    margin-left: 46%;
+    margin-right: 48%;
+    margin-left: 48%;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
 }
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 .selected-gradient {
+    animation: fadeIn 0.7s;
+    -webkit-animation: fadeIn 0.7s;
+    -moz-animation: fadeIn 0.7s;
+    -o-animation: fadeIn 0.7s;
+    -ms-animation: fadeIn 0.7s;
     background: linear-gradient(225deg, rgba(151, 108, 243, 1), rgba(49, 79, 219, 1)) !important;
+}
+
+.unselected-gradient {
+    background: linear-gradient(225deg, rgba(151, 108, 243, 0), rgba(49, 79, 219, 0)) !important;
 }
 
 .children {
