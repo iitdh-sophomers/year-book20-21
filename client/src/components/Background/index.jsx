@@ -19,7 +19,7 @@ const Background = () => {
                 }
                 },
                 color: {
-                value: "#ffffff"
+                value: "#FF10F0"
                 },
                 shape: {
                 type: "circle"
@@ -105,7 +105,7 @@ const Background = () => {
                 {
                 direction: "top",
                 particles: {
-                    color: "#ffffff"
+                    color: "#FF10F0"
                 },
                 rate: {
                     quantity: 1,
