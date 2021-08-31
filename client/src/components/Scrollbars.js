@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Scrollbars } from 'react-custom-scrollbars';
 
-export default class ColoredScrollbars extends Component {
+export default class CustomScrollbars extends Component {
 
     constructor(props, ...rest) {
         super(props, ...rest);
