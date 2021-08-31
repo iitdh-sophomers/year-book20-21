@@ -35,7 +35,7 @@ export default class ColoredScrollbars extends Component {
             backgroundColor: "#0E141B",
             zIndex: "9999",
             height: "8px",
-            width: "100vh",
+            width: "100vw",
             bottom: "0"
         };
         return (

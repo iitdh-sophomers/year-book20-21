@@ -1,51 +1,45 @@
 import React from 'react';
-import { useMediaQuery } from 'react-responsive';
 import { Row, Col, Card } from 'react-bootstrap';
-import './styles.css';
-import avatar from './avatar.png';
 
-import info from './data.json';
+import data from '../../shared/Students.json';
+import avatar from './avatar.png';
+import './styles.css';
 
 const CardsComp = () => {
-    const isTabletorMobile = useMediaQuery({
-        query: '(max-width: 700px)'
-    });
-
-    const RenderCards = (info) => {
-        return(
-            <div >
-        <Row className="col-lg-4 col-md-6 col-xs-12">
-            <Card bg="light" width="33.33%" className = "cards" key={info.id}>
-                    <Card.Img src={avatar} />
-                    <Card.Body>
-                    <Card.Title>{info.name}</Card.Title>
-                    <Card.Text>
-                        {info.place}
-                    </Card.Text>
-                    </Card.Body>
-                </Card>
-        </Row> 
-        </div>
-
-        )
-      }
     return (
         <div className="grid">
-             <Row>
-                {Array.from({ length: 9 }).map((_, idx) => (
-                    <Col xs={12} sm={6} md={6} lg={4}>
-                    <Card className="cards">
-                        <Card.Img variant="bottom" src={avatar} className="img" />
-                        <Card.Body>
-                        <Card.Title>Name</Card.Title>
-                        </Card.Body>
-                    </Card>
+             <Row style={row_style}>
+                {data.map((data, idx) => (
+                    <Col xs={12} md={4} style={col_style} key={idx}>
+                        <Card className="cards">
+                            <Card.Img variant="bottom" src={(data.image==='')?avatar:data.image} className="img" />
+                            <Card.Body>
+                            <Card.Title className="text">{ data.name }</Card.Title>
+                            <Card.Title className="body">{ data.id }</Card.Title>
+                            </Card.Body>
+                        </Card>
                     </Col>
                 ))}
             </Row>
             
         </div>
     )
+}
+
+const row_style = {
+    height: '100%',
+    margin: 'auto',
+    marginTop: '11vh',
+    padding: '1%',
+    maxWidth: '100%',
+    flexGrow: '1'
+}
+
+const col_style = {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginBottom: '2%'
 }
 
 export default CardsComp

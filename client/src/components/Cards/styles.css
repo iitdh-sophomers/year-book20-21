@@ -15,8 +15,8 @@ border-radius: 10px;
     justify-content: space-evenly;
     color: white;
     background-color: black;
-    width: 400px;
-    height: 247px;
+    width: 90%;
+    height: 100%;
     margin: 10px;
     padding: 10px;
     border-radius: 20px;
@@ -35,5 +35,7 @@ border-radius: 10px;
 .grid
 {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
 }
