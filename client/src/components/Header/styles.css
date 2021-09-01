@@ -32,9 +32,7 @@
 }
 
 .circle-border {
-    border-style: solid;
     border-radius: 50px;
-    border-color: rgba(151, 108, 243, 1);
     height: 45px;
     margin: 5px;
     margin-right: 48%;
@@ -128,4 +126,22 @@
 
 .fullWidth {
     max-width: 100vw;
+}
+
+.title {
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 500 !important;
+    font-size: 19px !important;
+}
+
+.underline-violet {
+        border-bottom: 3px solid #976CF3;
+}
+
+.underline-green {
+    border-bottom: 3px solid #04BC81;
+}
+
+.underline-yellow {
+    border-bottom: 3px solid #EDD504;
 }

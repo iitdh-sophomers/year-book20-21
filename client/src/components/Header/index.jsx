@@ -53,9 +53,21 @@ const Header = ({ active }) => {
                 {!isTabletorMobile && (
                     <>
                         <Nav className="justify-content-end">
-                            <NavLink id="1" href="/" className={`elements text a ${(active===1)?'circle-border selected-gradient bcolor':`circle-border-invisible white ${hover?'selected-gradient':'unselected-gradient'}`}`} onMouseEnter={toggleHover} onMouseLeave={toggleHover}>Home</NavLink>
-                            <NavLink id="2" href="/events" className={`elements text a ${(active===2)?'circle-border selected-gradient bcolor':`circle-border-invisible white ${hover2?'selected-gradient':'unselected-gradient'}`}`} onMouseEnter={toggleHover2} onMouseLeave={toggleHover2}>Events</NavLink>
-                            <NavLink id="3" href="/students" className={`elements text a ${(active===3)?'circle-border selected-gradient bcolor':`circle-border-invisible white ${hover1?'selected-gradient':'unselected-gradient'}`}`} onMouseEnter={toggleHover1} onMouseLeave={toggleHover1}>Students</NavLink>
+                            <NavLink id="1" href="/" className={`elements circle-border ${((active!==1) && hover)?'selected-gradient':'unselected-gradient'}`} onMouseEnter={toggleHover} onMouseLeave={toggleHover}>
+                                <div className={`title a ${(active===1)?'underline-violet violet':'white'}`}>
+                                    Home
+                                </div>
+                            </NavLink>
+                            <NavLink id="2" href="/events" className={`elements circle-border ${((active!==2) && hover2)?'selected-gradient':'unselected-gradient'}`} onMouseEnter={toggleHover2} onMouseLeave={toggleHover2}>
+                                <div className={`title a ${(active===2)?'underline-green green':'white'}`}>
+                                    Events
+                                </div>
+                            </NavLink>
+                            <NavLink id="3" href="/students" className={`elements circle-border ${((active!==3) && hover1)?'selected-gradient':'unselected-gradient'}`} onMouseEnter={toggleHover1} onMouseLeave={toggleHover1}>
+                                <div className={`title a ${(active===3)?'underline-green green':'white'}`}>
+                                    Students
+                                </div>
+                            </NavLink>
                             <DownloadButton/>
                         </Nav>
                     </>
