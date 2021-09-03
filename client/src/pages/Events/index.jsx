@@ -1,6 +1,8 @@
 import React from 'react';
-import Header from '../../components/Header';
+import Fade from 'react-reveal/Fade';
+
 import EventComp from "../../components/Event";
+import Header from '../../components/Header';
 import './styles.css';
 
 const Events = () => {
@@ -8,9 +10,15 @@ const Events = () => {
         <div>
             <Header active={2}/>
             <div className="content">
-                <EventComp parity={0}/>
-                <EventComp parity={1}/>
-                <EventComp parity={0}/>
+                <Fade right delay={100}>
+                    <EventComp parity={0}/>
+                </Fade>
+                <Fade left delay={100}>
+                    <EventComp parity={1}/>
+                </Fade>
+                <Fade right delay={100}>
+                    <EventComp parity={0}/>
+                </Fade>
             </div>
         </div>
     )
