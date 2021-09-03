@@ -10,7 +10,7 @@ function App() {
 		<div>
 			<LazyLoad>
 				<Background/>
-				<Router>
+				<Router basename="/">
 					<Routes/>
 				</Router>
 			</LazyLoad>

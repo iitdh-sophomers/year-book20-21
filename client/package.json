@@ -2,7 +2,6 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://*",
   "homepage": "https://iitdh-sophomers.github.io/year-book20-21/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
