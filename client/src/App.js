@@ -1,4 +1,4 @@
-import { HashRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import LazyLoad from 'react-lazyload';
 
 import Background from './components/Background';
@@ -10,7 +10,7 @@ function App() {
 		<div>
 			<LazyLoad>
 				<Background/>
-				<Router basename="/">
+				<Router>
 					<Routes/>
 				</Router>
 			</LazyLoad>
