@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Fade from 'react-reveal/Fade';
+import Slide from 'react-reveal/Slide';
 import { useMediaQuery } from 'react-responsive';
 import { Navbar, Container, Nav, Button, NavLink } from 'react-bootstrap';
 
@@ -39,45 +39,49 @@ const Header = ({ active }) => {
     };
 
     return (
-        <Fade top delay={100}>
+        <Slide top delay={100} when={true}>
             <Navbar fixed="top" className="header">
                 <Container className="fullWidth">
-                    <Navbar.Brand className="elements">
-                        <div className="children">
-                            {isTabletorMobile && (
-                                <Button className="gradient-text no-border link" onClick={toggleShow}>
-                                    <i class="fas fa-bars fa-2x"/>
-                                </Button>
-                            )}
-                            <Logo/>
-                        </div>
-                    </Navbar.Brand>
-                    {!isTabletorMobile && (
-                        <>
-                            <Nav className="justify-content-end">
-                                <NavLink id="1" href="/" className={`elements circle-border ${((active!==1) && hover)?'selected-gradient':'unselected-gradient'}`} onMouseEnter={toggleHover} onMouseLeave={toggleHover}>
-                                    <div className={`title a ${(active===1)?'underline-violet violet':'white'}`}>
-                                        Home
-                                    </div>
-                                </NavLink>
-                                <NavLink id="2" href="/events" className={`elements circle-border ${((active!==2) && hover2)?'selected-gradient':'unselected-gradient'}`} onMouseEnter={toggleHover2} onMouseLeave={toggleHover2}>
-                                    <div className={`title a ${(active===2)?'underline-green green':'white'}`}>
-                                        Events
-                                    </div>
-                                </NavLink>
-                                <NavLink id="3" href="/students" className={`elements circle-border ${((active!==3) && hover1)?'selected-gradient':'unselected-gradient'}`} onMouseEnter={toggleHover1} onMouseLeave={toggleHover1}>
-                                    <div className={`title a ${(active===3)?'underline-green green':'white'}`}>
-                                        Students
-                                    </div>
-                                </NavLink>
-                                <DownloadButton/>
-                            </Nav>
-                        </>
-                    )}
+                    <Slide top delay={100} when={true}>
+                        <Navbar.Brand className="elements">
+                            <div className="children">
+                                {isTabletorMobile && (
+                                    <Button className="gradient-text no-border link" onClick={toggleShow}>
+                                        <i className="fas fa-bars fa-2x"/>
+                                    </Button>
+                                )}
+                                <Logo/>
+                            </div>
+                        </Navbar.Brand>
+                    </Slide>
+                    <Slide top delay={100} when={true}>
+                        {!isTabletorMobile && (
+                            <>
+                                <Nav className="justify-content-end">
+                                    <NavLink id="1" href="/" className={`elements circle-border ${((active!==1) && hover)?'selected-gradient':'unselected-gradient'}`} onMouseEnter={toggleHover} onMouseLeave={toggleHover}>
+                                        <div className={`title a ${(active===1)?'underline-violet violet':'white'}`}>
+                                            Home
+                                        </div>
+                                    </NavLink>
+                                    <NavLink id="2" href="/events" className={`elements circle-border ${((active!==2) && hover2)?'selected-gradient':'unselected-gradient'}`} onMouseEnter={toggleHover2} onMouseLeave={toggleHover2}>
+                                        <div className={`title a ${(active===2)?'underline-green green':'white'}`}>
+                                            Events
+                                        </div>
+                                    </NavLink>
+                                    <NavLink id="3" href="/students" className={`elements circle-border ${((active!==3) && hover1)?'selected-gradient':'unselected-gradient'}`} onMouseEnter={toggleHover1} onMouseLeave={toggleHover1}>
+                                        <div className={`title a ${(active===3)?'underline-green green':'white'}`}>
+                                            Students
+                                        </div>
+                                    </NavLink>
+                                    <DownloadButton/>
+                                </Nav>
+                            </>
+                        )}
+                    </Slide>
                 </Container>
                 <Sidebar show={show} handleClose={toggleShow} active={active}/>
             </Navbar>
-        </Fade>
+        </Slide>
     )
 }
 

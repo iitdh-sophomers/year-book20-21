@@ -17,7 +17,7 @@ img {
 	top: 0;
 	font-size: 25px;
 	font-weight: medium;
-	/* height: fit-content; */
+	z-index: -1;
 }
 .homepage__description {
 	background-color: #0e141b !important;

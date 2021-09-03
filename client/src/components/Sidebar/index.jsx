@@ -8,17 +8,17 @@ import Logo from '../Logo';
 const Sidebar = ({ show, handleClose, active }) => {
 
     const isTabletorMobile = useMediaQuery({
-        query: '(max-width: 700px)'
+        query: '(max-width: 1000px)'
     });
 
     const history = useHistory();
 
     return (
-        <div className="background-black" style={{ left:show?'0':'-256px', position: 'absolute', height: '100vh', width: '256px', margin: '0', padding: '0', transition: 'left 1s', zIndex: 100, top: '0px' }}>
+        <div className="background-black" style={{ left:show?'0':'-320px', position: 'absolute', height: '100vh', width: '320px', margin: '0', padding: '0', transition: 'left 0.5s', zIndex: 100, top: '0px' }}>
             <div className="children">
                 {isTabletorMobile && (
                     <Button className="gradient-text no-border elements link" onClick={handleClose}>
-                        <i class="fas fa-bars fa-2x"/>
+                        <i class="fas fa-arrow-left fa-2x"/>
                     </Button>
                 )}
                 <Logo/>
