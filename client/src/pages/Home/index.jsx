@@ -1,7 +1,7 @@
 import React from "react";
 import Slide from 'react-reveal/Slide';
 
-import picture from "../../components/Cards/avatar.png";
+import picture from "./IITDh_logo.png";
 import Header from "../../components/Header";
 import { url } from '../../shared/pdfURL';
 import "./styles.css";
