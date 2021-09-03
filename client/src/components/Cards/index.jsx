@@ -8,23 +8,30 @@ import avatar from './avatar.png';
 import './styles.css';
 
 const CardsComp = () => {
+
     return (
         <div className="grid">
              <Row style={row_style}>
                 {data.map((data, idx) => (
-                    <Zoom delay={100}>
-                        <Fade delay={200}>
-                            <Col xs={12} md={4} style={col_style} key={idx}>
-                                <Card className="cards">
-                                    <Card.Img variant="bottom" src={(data.image==='')?avatar:data.image} className="img" />
-                                    <Card.Body>
-                                    <Card.Title className="text">{ data.name }</Card.Title>
-                                    <Card.Title className="body">{ data.id }</Card.Title>
-                                    </Card.Body>
-                                </Card>
-                            </Col>
-                        </Fade>
-                    </Zoom>
+                    <Col xs={12} md={4} style={col_style} key={idx}>
+                        <div className="cont">
+                            <Zoom delay={100}>
+                                <Fade delay={200}>
+                                    <Card className="cards">
+                                        <Card.Img variant="bottom" src={(data.image==='')?avatar:data.image} className="img" />
+                                        <Card.Body>
+                                        <Card.Title className="text">{ data.name }</Card.Title>
+                                        <Card.Subtitle className="body">
+                                            <a href={`https://www.instagram.com/${data.id}/`} className="a">
+                                                { (data.id !=='') && `@${data.id}` }
+                                            </a>
+                                        </Card.Subtitle>
+                                        </Card.Body>
+                                    </Card>
+                                </Fade>
+                            </Zoom>
+                        </div>
+                    </Col>
                 ))}
             </Row>
             

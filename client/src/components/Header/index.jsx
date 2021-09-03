@@ -11,7 +11,7 @@ import './styles.css';
 const Header = ({ active }) => {
 
     const isTabletorMobile = useMediaQuery({
-        query: '(max-width: 700px)'
+        query: '(max-width: 1000px)'
     });
 
     const [show, setShow] = useState(false);

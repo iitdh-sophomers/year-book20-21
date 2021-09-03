@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 
 import './styles.css';
 
 const Logo = () => {
+
+    const [hover, setHover] = useState(false);
 
     const history = useHistory();
 
