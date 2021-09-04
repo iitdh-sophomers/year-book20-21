@@ -35,7 +35,7 @@
     width: 200px !important;
     margin-left: auto;
     margin-right: auto;
-    object-fit: cover;
+    object-fit: scale down;
 }
 
 .grid {
