@@ -22,7 +22,7 @@ const CardsComp = () => {
                                         <Card.Body>
                                         <Card.Title className="text">{ data.name }</Card.Title>
                                         <Card.Subtitle className="body">
-                                            <a href={`https://www.instagram.com/${data.id}/`} className="a">
+                                            <a href={`https://www.instagram.com/${data.id}/`} target="_blank" className="a">
                                                 { (data.id !=='') && `@${data.id}` }
                                             </a>
                                         </Card.Subtitle>
