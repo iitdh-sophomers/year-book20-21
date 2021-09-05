@@ -1,12 +1,12 @@
 import React from 'react';
-import './styles.css';
-import Carousel from "../../components/Carousel";
-import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container';
 
+import Carousel from "../../components/Carousel";
+import './styles.css';
 
-const EventComp = ({event, index}) => {
+const EventComp = ({event, index, title}) => {
 	const containerClass = index%2 ? "flex-row-reverse" : "";
 	return (
 		<Container fluid className="py-5">
@@ -15,7 +15,12 @@ const EventComp = ({event, index}) => {
 					<Carousel imgs={event.images} />
 				</Col>
 				<Col lg="5" className="px-5 text-center body">
-					{event.description}
+					<h3 className="text">
+						{title}
+					</h3>
+					<p className="body">
+						{event.description}
+					</p>
 				</Col>
 			</Row>
 		</Container>

@@ -17,6 +17,8 @@ const Events = () => {
                 answer += value[i].toUpperCase();
             } else if(value[i]==='_') {
                 answer += " ";
+                answer += value[i+1].toUpperCase();
+                i++
             } else {
                 answer += value[i];
             }
@@ -30,8 +32,8 @@ const Events = () => {
             <Header active={2}/>
             <div className="content">
                 {EventData.map((data, index) => (
-                    <Fade right delay={100}>
-                        <EventComp event={data} index={index}/>
+                    <Fade right={!index%2} left={index%2} delay={100}>
+                        <EventComp event={data} title={makeTitle(data.id)} index={index}/>
                     </Fade>
                 ))}
             </div>
