@@ -1,5 +1,6 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
+
 import EventData from '../../shared/events.json'
 import EventComp from "../../components/Event";
 import Header from '../../components/Header';
