@@ -29,13 +29,11 @@ const Events = () => {
         <div>
             <Header active={2}/>
             <div className="content">
-                {EventData.map((data, index) => {
-                    return (
-                        <Fade right delay={100}>
-                            <EventComp event={data} index={index}/>
-                        </Fade>
-                    )
-                })}
+                {EventData.map((data, index) => (
+                    <Fade right delay={100}>
+                        <EventComp event={data} index={index}/>
+                    </Fade>
+                ))}
             </div>
         </div>
     )

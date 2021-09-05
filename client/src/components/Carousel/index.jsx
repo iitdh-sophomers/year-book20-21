@@ -1,5 +1,7 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
+
+import img from './placeholder.jpg';
 import './styles.css';
 
 const CarouselComp = ({imgs}) => {
@@ -8,9 +10,9 @@ const CarouselComp = ({imgs}) => {
 			{imgs.map((data, index) => (
 				<Carousel.Item>
 					<img
-					className="d-block w-100 fade-out"
-					src={data}
-					alt={index}
+						className="d-block w-100 fade-out"
+						src={img}
+						alt={`Slide ${index+1}`}
 					/>
 				</Carousel.Item>
 			))}
