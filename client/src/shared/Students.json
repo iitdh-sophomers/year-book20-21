@@ -4,6 +4,11 @@
         "name": "Tabish Khalid Halim"
     },
     {
+        "id": "hunter_sadock1",
+        "image": "https://drive.google.com/uc?id=11QqDMdlYtRmlJonidoKrHt-NBkjvaKqw",
+        "name": "Sadock Chakma"
+    },
+    {
         "id": "samriddhachattopadhyay",
         "image": "https://drive.google.com/uc?id=1XPVkFzBSQX4-zxBUxVcPmpEFwOHmwNRy",
         "name": "Samriddha Chattopadhyay"
@@ -707,11 +712,6 @@
         "id": "",
         "image": "",
         "name": "Ruhan Mozumdar"
-    },
-    {
-        "id": "",
-        "image": "",
-        "name": "Sadock Chakma"
     },
     {
         "id": "",
