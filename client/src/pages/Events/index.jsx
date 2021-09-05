@@ -8,32 +8,13 @@ import './styles.css';
 
 const Events = () => {
 
-    const makeTitle = (value) => {
-        let answer='';
-        for(let i=0; i<value.length; i++) {
-            if(i<value.length-2 && value[i]==='C' && value[i+1]==='D' && value[i+2]==='C') {
-                answer += "CDC";
-            } else if(i===0) {
-                answer += value[i].toUpperCase();
-            } else if(value[i]==='_') {
-                answer += " ";
-                answer += value[i+1].toUpperCase();
-                i++
-            } else {
-                answer += value[i];
-            }
-        }
-
-        return answer;
-    }
-
     return (
         <div>
             <Header active={2}/>
             <div className="content">
                 {EventData.map((data, index) => (
                     <Fade right={!index%2} left={index%2} delay={100}>
-                        <EventComp event={data} title={makeTitle(data.id)} index={index}/>
+                        <EventComp event={data} title={data.id} index={index}/>
                     </Fade>
                 ))}
             </div>
