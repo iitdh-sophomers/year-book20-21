@@ -13,7 +13,7 @@ const Events = () => {
             <Header active={2}/>
             <div className="content">
                 {EventData.map((data, index) => (
-                    <Fade right={!index%2} left={index%2} delay={100}>
+                    <Fade right={!(index%2)} left={index%2} delay={100}>
                         <EventComp event={data} title={data.id} index={index}/>
                     </Fade>
                 ))}
