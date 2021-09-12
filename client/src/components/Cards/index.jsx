@@ -9,6 +9,17 @@ import './styles.css';
 
 const CardsComp = () => {
 
+    const makeName = (name) => {
+        let newName="";
+        let words = name.split(" ");
+        for(let i=0; i<words.length; i++) {
+            words[i]=words[i].toLowerCase();
+            newName+= words[i].charAt(0).toUpperCase()+words[i].slice(1);
+            newName+=" ";
+        }
+        return newName;
+    }
+
     return (
         <div className="grid">
              <Row style={row_style}>
@@ -20,7 +31,7 @@ const CardsComp = () => {
                                     <Card className="cards">
                                         <Card.Img variant="bottom" src={(data.image==='')?avatar:data.image} className="img" />
                                         <Card.Body>
-                                        <Card.Title className="text">{ data.name }</Card.Title>
+                                        <Card.Title className="text">{ makeName(data.name) }</Card.Title>
                                         <Card.Subtitle className="body">
                                             <a href={`https://www.instagram.com/${data.id}/`} rel="noreferrer" target="_blank" className="a">
                                                 { (data.id !=='') && `@${data.id}` }
