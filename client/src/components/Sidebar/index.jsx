@@ -3,6 +3,7 @@ import { Button } from 'react-bootstrap';
 import { useHistory } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
 
+import { url } from '../../shared/pdfURL';
 import Logo from '../Logo';
 
 const Sidebar = ({ show, handleClose, active }) => {
@@ -27,7 +28,7 @@ const Sidebar = ({ show, handleClose, active }) => {
                 <p className={`elements text link ${(active===1)?'violet':'white'}`} onClick={() => history.push('/')}>Home</p>
                 <p className={`elements text link ${(active===2)?'yellow':'white'}`} onClick={() => history.push('/events')}>Events</p>
                 <p className={`elements text link ${(active===3)?'green':'white'}`} onClick={() => history.push('/students')}>Students</p>
-                <p className="elements text a gradient-text">Download as PDF</p>
+                <a href={url} className="elements text a gradient-text">Download as PDF</a>
             </div>
         </div>
     )
