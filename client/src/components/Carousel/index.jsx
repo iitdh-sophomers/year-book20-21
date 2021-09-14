@@ -9,11 +9,13 @@ const CarouselComp = ({imgs}) => {
 		<Carousel className="carousel">
 			{imgs.map((data, index) => (
 				<Carousel.Item>
-					<img
-						className="d-block w-100 fade-out"
-						src={data}
-						alt={`Slide ${index+1}`}
-					/>
+					<div className="w-100 fade-out img-holder">
+						<img
+							className="d-block"
+							src={data}
+							alt={`Slide ${index+1}`}
+						/>
+					</div>
 				</Carousel.Item>
 			))}
 		</Carousel>
