@@ -1,0 +1,14 @@
+@import url('../../globalStyles.css');
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    height: 5vh;
+    width: 95vw;
+    margin: 0 2.5vw;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
