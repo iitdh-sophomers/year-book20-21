@@ -3,6 +3,10 @@
 	<a href="https://iitdh-sophomers.github.io/year-book20-21" target="_blank">YearBook</a>
 </h2>
 
+<div align="center">
+	<img alt="Demo" src="./Demo.png" />
+</div>
+
 <br/>
 
 <center>
